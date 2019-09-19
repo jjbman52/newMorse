@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="newMorse.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label x:Name="dotDash" Text="" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+        <Button x:Name="dot" Text="." Clicked="dotClicked"/>
+        <Button x:Name="dash" Text="-" Clicked="dashClicked"/>
+        <Button Text="Space" Clicked="spaceClicked"/>
+
+        <Label x:Name="output" Text="" HorizontalTextAlignment="Center" HeightRequest="100"/>
+
+        <Button Text="Delete" Clicked="delete" />
+
+        
+
+    </StackLayout>
+
+</ContentPage>
